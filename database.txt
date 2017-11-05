@@ -1,5 +1,3 @@
-https://github.com/aosp-mirror/kernel_common
-https://github.com/aosp-mirror/kernel_msm
 https://github.com/aosp-mirror/platform_bionic
 https://github.com/aosp-mirror/platform_build
 https://github.com/aosp-mirror/platform_dalvik
