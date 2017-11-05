@@ -16,12 +16,12 @@ EOF
 
 
 if [ $type = "common" ]; then
-  git clone -b $branch https://github.com/aosp-mirror/kernel_common
+  git clone -b $branch https://github.com/aosp-mirror/kernel_common.git
 fi
 
 
 if [ $type = "common" ]; then
-  git clone -b $branch https://github.com/aosp-mirror/kernel_msm
+  git clone -b $branch https://github.com/aosp-mirror/kernel_msm.git
 fi
 
 
