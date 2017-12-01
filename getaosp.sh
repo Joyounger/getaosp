@@ -18,7 +18,7 @@ gitclone()
     entry_all=${suffix:0:$len-4}        #eg:packages_apps_stk
     dst=$(echo $entry_all | tr _ /)     #eg:packages/apps/stk
     
-    git clone -v -b $branch $url dst
+    git clone -v -b $branch $url $dst
 }
 
 cat << EOF
