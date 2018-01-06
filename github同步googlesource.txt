@@ -1,0 +1,31 @@
+1 github 建立项目时, 导入google source项目
+git clone https://android.googlesource.com/platform/bootable/recovery
+
+2 项目在github建立好后, clone到本地
+这时查看clone下来的项目的remote的名字为origin
+$ git remote -v
+origin  https://github.com/AOSPSRC/platform_bootable_recovery.git (fetch)
+origin  https://github.com/AOSPSRC/platform_bootable_recovery.git (push)
+
+3 clone到本地的项目设置代理
+git remote add googlesource https://android.googlesource.com/platform/bootable/recovery  (remote add后的名字随意)
+git config http.proxy http://10.100.2.154:3128
+git fetch googlesource
+
+这时用git branch -av查看,输出中
+ remotes/googlesource/xxxx 中的都是android.googlesource.com项目中存在的分支
+
+假设想从android.googlesource.com项目中存在的分支A中拉取更新,merge到github项目的B分支中
+git checkout B
+git merge googlesource/A
+
+
+merge后本地的仓库已经是最新的咯，然后push到你的github就同步完成
+git push origin(clone下来的项目的remote的名字) B
+
+
+git push -u origin(clone下来的项目的remote的名字) B
+
+
+https://android.googlesource.com/
+git clone https://android.googlesource.com/platform/system/extras
