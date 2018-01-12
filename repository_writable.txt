@@ -1,0 +1,7 @@
+https://github.com/AOSPSRC/platform_external_brotli
+https://github.com/AOSPSRC/platform_bootable_recovery
+https://github.com/AOSPSRC/platform_system_extras
+https://github.com/AOSPSRC/platform_build
+https://github.com/AOSPSRC/platform_manifest
+https://github.com/AOSPSRC/platform_system_adb
+https://github.com/AOSPSRC/platform_system_vold

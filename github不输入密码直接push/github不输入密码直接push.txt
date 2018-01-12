@@ -1,0 +1,1 @@
+将 githubautopush.zip 中的.gitconfig, .git-credentials 放到$HOME下即可
